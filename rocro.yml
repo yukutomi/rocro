@@ -1,0 +1,30 @@
+loadroid:
+  requests:
+    add_doc:
+      method: POST
+      url: 
+        path: /images/
+      header:
+        content-type: application/json
+      body:
+        fields:
+          testkey:
+            stringValue: testvalue
+    
+    add_doc_func:
+      method: GET
+      url:
+        path: /images/
+
+  scenarios:
+    write_100k_doc:
+      num-users: 73000
+      period:
+        entry: 1
+        overall: 20
+      loop: false
+      requests:
+        add_doc: 1
+  run:
+    - write_100k_doc
+
