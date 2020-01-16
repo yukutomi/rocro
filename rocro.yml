@@ -2,7 +2,8 @@ loadroid:
   requests:
     add_doc:
       method: POST
-      url: https://firebasestorage.googleapis.com/v0/b/guw-chat.appspot.com/o/TwGsdQatgKawWGKa6h0GBwT1vqk2%2FhEZwSxeKKpanobeDEL38%2Fyukutomi%40cir-ins.com.jpg?alt=media&token=a7433b71-225d-4843-bc8f-f9c59bdf5aae&1579126880523
+      url: 
+        path: /images0/
       header:
         content-type: application/json
       body:
@@ -12,7 +13,8 @@ loadroid:
     
     add_doc_func:
       method: GET
-      url: https://firebasestorage.googleapis.com/v0/b/guw-chat.appspot.com/o/TwGsdQatgKawWGKa6h0GBwT1vqk2%2FhEZwSxeKKpanobeDEL38%2Fyukutomi%40cir-ins.com.jpg?alt=media&token=a7433b71-225d-4843-bc8f-f9c59bdf5aae&1579126880523
+      url:
+        path: /images
 
   scenarios:
     write_100k_doc:
