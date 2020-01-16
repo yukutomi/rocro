@@ -2,7 +2,8 @@ loadroid:
   requests:
     add_doc:
       method: POST
-      url: https://guw-chat.firebaseapp.com/images0/
+      url: 
+        path: /images0/
       header:
         content-type: application/json
       body:
@@ -12,7 +13,8 @@ loadroid:
     
     add_doc_func:
       method: GET
-      url: https://guw-chat.firebaseapp.com/images
+      url:
+        path: /images
 
   scenarios:
     write_100k_doc:
